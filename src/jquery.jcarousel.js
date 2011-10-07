@@ -127,7 +127,7 @@
                     return new $j[name](element, options);
                 }
 
-                this.element = $(element).data(selector, this);
+                this.element = $(element).data(selector, this).addClass(selector);
 
                 this.options = $.extend({},
                     this.options,
